@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import Header from "./components/Header";
 
 import DroneStatus from "./components/DroneStatus";
@@ -11,46 +13,68 @@ import DetectionPanel from "./components/DetectionPanel";
 import DisasterHeatmap from "./components/DisasterHeatmap";
 import RecentAlerts from "./components/RecentAlerts";
 
+import MissionControl from "./components/MissionControl";
+
 import "./index.css";
 
+function LiveView() {
+  return (
+    <main className="command-dashboard">
+      <aside className="left-column">
+        <DroneStatus />
+
+        <PayloadSensors />
+
+        <MissionProgress />
+      </aside>
+
+      <section className="center-column">
+        <LiveCamera />
+
+        <MapView />
+      </section>
+
+      <aside className="right-column">
+        <DetectionPanel />
+
+        <DisasterHeatmap />
+
+        <RecentAlerts />
+      </aside>
+    </main>
+  );
+}
+
 function App() {
+  const [activePage, setActivePage] =
+    useState("live");
+
   return (
     <div className="app">
+      <Header
+        activePage={activePage}
+        onNavigate={setActivePage}
+      />
 
-      <Header />
+      {activePage === "live" && (
+        <LiveView />
+      )}
 
-      <main className="command-dashboard">
+      {activePage === "mission" && (
+        <MissionControl />
+      )}
 
-        <aside className="left-column">
+      {activePage === "map" && (
+        <LiveView />
+      )}
 
-          <DroneStatus />
+      {activePage === "detections" && (
+        <LiveView />
+      )}
 
-          <PayloadSensors />
-
-          <MissionProgress />
-
-        </aside>
-
-        <section className="center-column">
-
-          <LiveCamera />
-
-          <MapView />
-
-        </section>
-
-        <aside className="right-column">
-
-          <DetectionPanel />
-
-          <DisasterHeatmap />
-
-          <RecentAlerts />
-
-        </aside>
-
-      </main>
-
+      {activePage === "settings" && (
+        <LiveView />
+      )}
     </div>
   );
 }

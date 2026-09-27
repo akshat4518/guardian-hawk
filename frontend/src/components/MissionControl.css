@@ -1,0 +1,1282 @@
+/* =========================================================
+   GUARDIAN HAWK
+   MISSION CONTROL
+   ISOLATED STYLES
+   IMPORTANT: DO NOT MODIFY MAP STYLES
+   ========================================================= */
+
+.mission-control-page {
+  position: relative !important;
+
+  display: block !important;
+
+  width: 100% !important;
+  min-height: calc(100vh - 72px) !important;
+
+  margin: 0 !important;
+  padding: 14px !important;
+
+  box-sizing: border-box !important;
+
+  background: #020b11 !important;
+  color: #dce8ee !important;
+
+  overflow-x: hidden !important;
+}
+
+
+/* =========================================================
+   TOP HEADER
+   ========================================================= */
+
+.mission-control-topbar {
+  position: relative !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+
+  width: 100% !important;
+  min-height: 68px !important;
+
+  margin: 0 0 12px 0 !important;
+  padding: 12px 16px !important;
+
+  box-sizing: border-box !important;
+
+  background: #07151d !important;
+
+  border: 1px solid #17313c !important;
+  border-radius: 8px !important;
+}
+
+
+.mission-control-title {
+  display: flex !important;
+  align-items: center !important;
+
+  gap: 12px !important;
+
+  min-width: 0 !important;
+}
+
+
+.mission-control-icon {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  width: 38px !important;
+  height: 38px !important;
+
+  flex: 0 0 38px !important;
+
+  background: #0b2633 !important;
+
+  border: 1px solid #1c5265 !important;
+  border-radius: 7px !important;
+
+  color: #62c9ff !important;
+}
+
+
+.mission-control-title h1 {
+  margin: 0 !important;
+  padding: 0 !important;
+
+  color: #e8f3f7 !important;
+
+  font-size: 18px !important;
+  line-height: 1.2 !important;
+
+  font-weight: 700 !important;
+
+  letter-spacing: 0.08em !important;
+}
+
+
+.mission-control-title p {
+  margin: 4px 0 0 0 !important;
+  padding: 0 !important;
+
+  color: #6f8994 !important;
+
+  font-size: 9px !important;
+  line-height: 1.2 !important;
+
+  text-transform: uppercase !important;
+  letter-spacing: 0.08em !important;
+}
+
+
+/* =========================================================
+   HEADER STATUS
+   ========================================================= */
+
+.mission-control-status {
+  display: flex !important;
+  align-items: center !important;
+
+  gap: 8px !important;
+
+  flex-shrink: 0 !important;
+}
+
+
+.mission-status-item {
+  display: flex !important;
+  align-items: center !important;
+
+  gap: 7px !important;
+
+  min-height: 32px !important;
+
+  padding: 0 10px !important;
+
+  box-sizing: border-box !important;
+
+  background: #061219 !important;
+
+  border: 1px solid #193742 !important;
+  border-radius: 5px !important;
+
+  white-space: nowrap !important;
+}
+
+
+.mission-status-item svg {
+  color: #43d493 !important;
+}
+
+
+.mission-status-item span {
+  color: #708994 !important;
+
+  font-size: 8px !important;
+  text-transform: uppercase !important;
+}
+
+
+.mission-status-item strong {
+  color: #45d596 !important;
+
+  font-size: 8px !important;
+  letter-spacing: 0.05em !important;
+}
+
+
+/* =========================================================
+   MAIN 3-COLUMN GRID
+   ========================================================= */
+
+.mission-control-grid {
+  display: grid !important;
+
+  grid-template-columns:
+    minmax(220px, 0.8fr)
+    minmax(420px, 1.7fr)
+    minmax(260px, 0.95fr) !important;
+
+  gap: 12px !important;
+
+  width: 100% !important;
+
+  align-items: start !important;
+}
+
+
+.mission-vehicle-column,
+.mission-planner-column,
+.mission-flight-column {
+  position: relative !important;
+
+  display: block !important;
+
+  width: 100% !important;
+  min-width: 0 !important;
+
+  box-sizing: border-box !important;
+}
+
+
+/* =========================================================
+   VEHICLE STATUS
+   ========================================================= */
+
+.mission-vehicle-column > .drone-status-panel {
+  width: 100% !important;
+}
+
+
+/* =========================================================
+   MISSION PLANNER PANEL
+   ========================================================= */
+
+.mission-planner-panel {
+  position: relative !important;
+
+  display: block !important;
+
+  width: 100% !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  box-sizing: border-box !important;
+
+  background: #07151d !important;
+
+  border: 1px solid #17313c !important;
+  border-radius: 8px !important;
+
+  overflow: hidden !important;
+}
+
+
+.mission-planner-header {
+  display: flex !important;
+
+  align-items: center !important;
+  justify-content: space-between !important;
+
+  min-height: 62px !important;
+
+  padding: 12px 14px !important;
+
+  box-sizing: border-box !important;
+
+  background: #081923 !important;
+
+  border-bottom: 1px solid #17313c !important;
+}
+
+
+.mission-planner-title {
+  display: flex !important;
+
+  align-items: center !important;
+
+  gap: 9px !important;
+}
+
+
+.mission-planner-title svg {
+  flex-shrink: 0 !important;
+
+  color: #61c8ff !important;
+}
+
+
+.mission-planner-title h2 {
+  margin: 0 !important;
+  padding: 0 !important;
+
+  color: #dceaf0 !important;
+
+  font-size: 15px !important;
+  line-height: 1.2 !important;
+}
+
+
+.mission-planner-title p {
+  margin: 4px 0 0 0 !important;
+  padding: 0 !important;
+
+  color: #6d8791 !important;
+
+  font-size: 8px !important;
+
+  text-transform: uppercase !important;
+}
+
+
+.mission-status-pill {
+  display: flex !important;
+
+  align-items: center !important;
+
+  gap: 6px !important;
+
+  padding: 5px 8px !important;
+
+  background: #0a211c !important;
+
+  border: 1px solid #275343 !important;
+  border-radius: 20px !important;
+
+  color: #55d79c !important;
+
+  font-size: 8px !important;
+
+  text-transform: uppercase !important;
+}
+
+
+.mission-status-pill span {
+  display: block !important;
+
+  width: 6px !important;
+  height: 6px !important;
+
+  flex: 0 0 6px !important;
+
+  border-radius: 50% !important;
+
+  background: #45d998 !important;
+
+  box-shadow: 0 0 7px rgba(69, 217, 152, 0.6) !important;
+}
+
+
+/* =========================================================
+   MISSION TOOLBAR
+   ========================================================= */
+
+.mission-toolbar {
+  display: flex !important;
+
+  align-items: center !important;
+  flex-wrap: wrap !important;
+
+  gap: 6px !important;
+
+  padding: 9px !important;
+
+  box-sizing: border-box !important;
+
+  background: #06131a !important;
+
+  border-bottom: 1px solid #142c35 !important;
+}
+
+
+.mission-action {
+  display: inline-flex !important;
+
+  align-items: center !important;
+  justify-content: center !important;
+
+  gap: 5px !important;
+
+  min-height: 29px !important;
+
+  padding: 0 9px !important;
+
+  box-sizing: border-box !important;
+
+  background: #0a1d26 !important;
+
+  border: 1px solid #294650 !important;
+  border-radius: 4px !important;
+
+  color: #a8bbc2 !important;
+
+  font-size: 8px !important;
+  font-weight: 700 !important;
+
+  cursor: pointer !important;
+}
+
+
+.mission-action:hover {
+  background: #102b36 !important;
+  border-color: #397185 !important;
+  color: #e2f0f4 !important;
+}
+
+
+.mission-action.primary {
+  background: #0a5577 !important;
+
+  border-color: #197aa5 !important;
+
+  color: #e8f8ff !important;
+}
+
+
+.mission-action.primary.active {
+  background: #0e7755 !important;
+
+  border-color: #27a978 !important;
+}
+
+
+.mission-action.danger {
+  background: #291318 !important;
+
+  border-color: #67323b !important;
+
+  color: #ed8b92 !important;
+}
+
+
+.mission-action:disabled {
+  opacity: 0.4 !important;
+  cursor: not-allowed !important;
+}
+
+
+/* =========================================================
+   MESSAGE
+   ========================================================= */
+
+.mission-message {
+  margin: 9px !important;
+  padding: 8px 10px !important;
+
+  background: #081d27 !important;
+
+  border: 1px solid #24536a !important;
+  border-radius: 4px !important;
+
+  color: #8fd8ff !important;
+
+  font-size: 9px !important;
+}
+
+
+/* =========================================================
+   TABLE
+   ========================================================= */
+
+.mission-table-wrapper {
+  display: block !important;
+
+  width: 100% !important;
+
+  overflow-x: auto !important;
+}
+
+
+.mission-table {
+  width: 100% !important;
+
+  margin: 0 !important;
+
+  border-collapse: collapse !important;
+
+  table-layout: auto !important;
+
+  font-size: 8px !important;
+}
+
+
+.mission-table th {
+  padding: 8px !important;
+
+  background: #091a22 !important;
+
+  border-bottom: 1px solid #18323c !important;
+
+  color: #627c87 !important;
+
+  font-size: 7px !important;
+  font-weight: 700 !important;
+
+  text-align: left !important;
+
+  white-space: nowrap !important;
+}
+
+
+.mission-table td {
+  padding: 8px !important;
+
+  background: transparent !important;
+
+  border-bottom: 1px solid #102731 !important;
+
+  color: #b5c8cf !important;
+
+  white-space: nowrap !important;
+}
+
+
+.mission-table tbody tr:hover {
+  background: #091d26 !important;
+}
+
+
+.wp-number {
+  display: inline-flex !important;
+
+  align-items: center !important;
+  justify-content: center !important;
+
+  width: 21px !important;
+  height: 21px !important;
+
+  background: #0d2834 !important;
+
+  border: 1px solid #225061 !important;
+  border-radius: 4px !important;
+
+  color: #7bd0fa !important;
+
+  font-weight: 700 !important;
+}
+
+
+.wp-status {
+  display: inline-block !important;
+
+  padding: 3px 6px !important;
+
+  background: #14252d !important;
+
+  border-radius: 3px !important;
+
+  color: #8298a2 !important;
+
+  font-size: 7px !important;
+}
+
+
+.wp-status.current {
+  background: #173f35 !important;
+  color: #58d7a1 !important;
+}
+
+
+.wp-status.completed {
+  background: #193449 !important;
+  color: #7bc8ee !important;
+}
+
+
+.coordinate {
+  color: #91aeb8 !important;
+
+  font-family: monospace !important;
+
+  font-size: 8px !important;
+}
+
+
+.altitude-editor {
+  display: flex !important;
+
+  align-items: center !important;
+
+  gap: 4px !important;
+}
+
+
+.altitude-editor input {
+  width: 52px !important;
+
+  height: 25px !important;
+
+  padding: 3px 5px !important;
+
+  box-sizing: border-box !important;
+
+  background: #06131a !important;
+
+  border: 1px solid #24434e !important;
+  border-radius: 4px !important;
+
+  color: #dceaf0 !important;
+
+  font-size: 8px !important;
+}
+
+
+.altitude-editor input:focus {
+  outline: none !important;
+
+  border-color: #3286a8 !important;
+}
+
+
+.altitude-editor span {
+  color: #647e88 !important;
+
+  font-size: 8px !important;
+}
+
+
+.wp-actions {
+  display: flex !important;
+
+  gap: 4px !important;
+}
+
+
+.wp-current-button,
+.wp-delete-button {
+  display: inline-flex !important;
+
+  align-items: center !important;
+  justify-content: center !important;
+
+  width: 26px !important;
+  height: 26px !important;
+
+  padding: 0 !important;
+
+  background: #0a1c24 !important;
+
+  border-radius: 4px !important;
+
+  cursor: pointer !important;
+}
+
+
+.wp-current-button {
+  border: 1px solid #245268 !important;
+  color: #70cfff !important;
+}
+
+
+.wp-delete-button {
+  border: 1px solid #5b3037 !important;
+  color: #e77e85 !important;
+}
+
+
+.wp-current-button:disabled,
+.wp-delete-button:disabled {
+  opacity: 0.35 !important;
+
+  cursor: not-allowed !important;
+}
+
+
+.empty-mission {
+  height: 110px !important;
+
+  text-align: center !important;
+
+  color: #657c86 !important;
+}
+
+
+.empty-mission svg {
+  display: block !important;
+
+  margin: 0 auto 8px !important;
+
+  color: #365764 !important;
+}
+
+
+/* =========================================================
+   MISSION CONTROL BAR
+   ========================================================= */
+
+.mission-control-bar {
+  display: flex !important;
+
+  align-items: center !important;
+  justify-content: space-between !important;
+
+  gap: 12px !important;
+
+  padding: 11px !important;
+
+  box-sizing: border-box !important;
+
+  background: #06131a !important;
+
+  border-top: 1px solid #18313b !important;
+}
+
+
+.mission-control-group {
+  display: flex !important;
+
+  align-items: center !important;
+
+  flex-wrap: wrap !important;
+
+  gap: 5px !important;
+}
+
+
+.mission-control-label {
+  margin-right: 3px !important;
+
+  color: #617b85 !important;
+
+  font-size: 7px !important;
+
+  font-weight: 700 !important;
+
+  letter-spacing: 0.07em !important;
+}
+
+
+.mission-control-button {
+  display: inline-flex !important;
+
+  align-items: center !important;
+  justify-content: center !important;
+
+  gap: 5px !important;
+
+  min-height: 28px !important;
+
+  padding: 0 8px !important;
+
+  background: #0b1e27 !important;
+
+  border: 1px solid #29434d !important;
+  border-radius: 4px !important;
+
+  color: #a9bcc3 !important;
+
+  font-size: 7px !important;
+  font-weight: 700 !important;
+
+  cursor: pointer !important;
+}
+
+
+.mission-control-button.start,
+.mission-control-button.resume {
+  background: #0c5c43 !important;
+
+  border-color: #168b63 !important;
+
+  color: #dffff1 !important;
+}
+
+
+.mission-control-button.pause {
+  background: #574719 !important;
+
+  border-color: #806c28 !important;
+
+  color: #f0df9a !important;
+}
+
+
+.mission-control-button.stop {
+  background: #4e2027 !important;
+
+  border-color: #7b3039 !important;
+
+  color: #f0a2a8 !important;
+}
+
+
+.mission-control-button:disabled {
+  opacity: 0.4 !important;
+
+  cursor: not-allowed !important;
+}
+
+
+/* =========================================================
+   PROGRESS
+   ========================================================= */
+
+.mission-progress {
+  flex: 1 1 130px !important;
+
+  min-width: 120px !important;
+}
+
+
+.mission-progress-top {
+  display: flex !important;
+
+  align-items: center !important;
+  justify-content: space-between !important;
+
+  margin-bottom: 5px !important;
+
+  color: #627b85 !important;
+
+  font-size: 7px !important;
+}
+
+
+.mission-progress-top strong {
+  color: #b9d3dc !important;
+}
+
+
+.mission-progress-track {
+  width: 100% !important;
+  height: 5px !important;
+
+  overflow: hidden !important;
+
+  background: #10252d !important;
+
+  border-radius: 10px !important;
+}
+
+
+.mission-progress-fill {
+  height: 100% !important;
+
+  background: #25a879 !important;
+
+  border-radius: 10px !important;
+}
+
+
+/* =========================================================
+   SIMULATION NOTICE
+   ========================================================= */
+
+.mission-simulation-notice {
+  display: flex !important;
+
+  align-items: center !important;
+  justify-content: space-between !important;
+
+  gap: 10px !important;
+
+  padding: 10px 12px !important;
+
+  box-sizing: border-box !important;
+
+  background: #06141b !important;
+
+  border-top: 1px solid #19313a !important;
+}
+
+
+.mission-simulation-notice strong {
+  display: block !important;
+
+  color: #dfc766 !important;
+
+  font-size: 8px !important;
+
+  letter-spacing: 0.07em !important;
+}
+
+
+.mission-simulation-notice span {
+  display: block !important;
+
+  margin-top: 3px !important;
+
+  color: #657d86 !important;
+
+  font-size: 8px !important;
+}
+
+
+.simulation-indicator {
+  display: flex !important;
+
+  align-items: center !important;
+
+  gap: 5px !important;
+
+  padding: 5px 7px !important;
+
+  background: #171507 !important;
+
+  border: 1px solid #5b4b23 !important;
+  border-radius: 4px !important;
+
+  color: #e0c75d !important;
+
+  white-space: nowrap !important;
+}
+
+
+/* =========================================================
+   FLIGHT CONTROL
+   ========================================================= */
+
+.flight-control-panel {
+  position: relative !important;
+
+  display: block !important;
+
+  width: 100% !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  box-sizing: border-box !important;
+
+  background: #07151d !important;
+
+  border: 1px solid #17313c !important;
+  border-radius: 8px !important;
+
+  overflow: hidden !important;
+}
+
+
+.flight-control-header {
+  display: flex !important;
+
+  align-items: center !important;
+  justify-content: space-between !important;
+
+  min-height: 62px !important;
+
+  padding: 12px 14px !important;
+
+  box-sizing: border-box !important;
+
+  background: #081923 !important;
+
+  border-bottom: 1px solid #17313c !important;
+}
+
+
+.flight-control-header h2 {
+  display: flex !important;
+
+  align-items: center !important;
+
+  gap: 7px !important;
+
+  margin: 0 !important;
+
+  color: #dceaf0 !important;
+
+  font-size: 15px !important;
+}
+
+
+.flight-control-header h2 svg {
+  color: #62c9ff !important;
+}
+
+
+.flight-control-header p {
+  margin: 4px 0 0 0 !important;
+
+  color: #718892 !important;
+
+  font-size: 8px !important;
+}
+
+
+.flight-mode {
+  text-align: right !important;
+}
+
+
+.flight-mode span {
+  display: block !important;
+
+  color: #5f7882 !important;
+
+  font-size: 7px !important;
+
+  letter-spacing: 0.08em !important;
+}
+
+
+.flight-mode strong {
+  display: block !important;
+
+  margin-top: 3px !important;
+
+  color: #6ed3ff !important;
+
+  font-size: 10px !important;
+}
+
+
+/* =========================================================
+   MAVLINK CONNECTION
+   ========================================================= */
+
+.flight-connection {
+  display: flex !important;
+
+  align-items: center !important;
+
+  gap: 7px !important;
+
+  min-height: 35px !important;
+
+  padding: 0 12px !important;
+
+  box-sizing: border-box !important;
+
+  background: #061219 !important;
+
+  border-bottom: 1px solid #142c35 !important;
+
+  color: #8ca4ad !important;
+
+  font-size: 8px !important;
+}
+
+
+.connection-dot {
+  display: block !important;
+
+  width: 7px !important;
+  height: 7px !important;
+
+  flex: 0 0 7px !important;
+
+  border-radius: 50% !important;
+
+  background: #d05252 !important;
+}
+
+
+.connection-dot.connected {
+  background: #35d58d !important;
+
+  box-shadow: 0 0 7px rgba(53, 213, 141, 0.6) !important;
+}
+
+
+.connection-refresh {
+  display: inline-flex !important;
+
+  align-items: center !important;
+  justify-content: center !important;
+
+  width: 25px !important;
+  height: 25px !important;
+
+  margin-left: auto !important;
+
+  padding: 0 !important;
+
+  background: #0b1e26 !important;
+
+  border: 1px solid #294650 !important;
+  border-radius: 4px !important;
+
+  color: #7da1ad !important;
+
+  cursor: pointer !important;
+}
+
+
+/* =========================================================
+   ARM STATUS
+   ========================================================= */
+
+.arm-status {
+  display: flex !important;
+
+  align-items: center !important;
+  justify-content: space-between !important;
+
+  min-height: 38px !important;
+
+  padding: 0 12px !important;
+
+  box-sizing: border-box !important;
+
+  border-bottom: 1px solid #142c35 !important;
+}
+
+
+.arm-status span {
+  color: #607983 !important;
+
+  font-size: 7px !important;
+
+  letter-spacing: 0.07em !important;
+}
+
+
+.arm-status strong {
+  font-size: 8px !important;
+}
+
+
+.arm-status strong.armed {
+  color: #e8bd5e !important;
+}
+
+
+.arm-status strong.disarmed {
+  color: #6e8892 !important;
+}
+
+
+/* =========================================================
+   CONTROL GROUPS
+   ========================================================= */
+
+.control-group {
+  display: block !important;
+
+  padding: 10px 12px !important;
+
+  box-sizing: border-box !important;
+
+  border-bottom: 1px solid #142c35 !important;
+}
+
+
+.control-label {
+  display: block !important;
+
+  margin-bottom: 7px !important;
+
+  color: #617983 !important;
+
+  font-size: 7px !important;
+
+  font-weight: 700 !important;
+
+  letter-spacing: 0.08em !important;
+
+  text-transform: uppercase !important;
+}
+
+
+.control-buttons {
+  display: grid !important;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+
+  gap: 5px !important;
+}
+
+
+.control-button {
+  display: flex !important;
+
+  align-items: center !important;
+  justify-content: center !important;
+
+  gap: 5px !important;
+
+  min-height: 33px !important;
+
+  padding: 0 6px !important;
+
+  background: #0a1d26 !important;
+
+  border: 1px solid #294650 !important;
+  border-radius: 5px !important;
+
+  color: #a7bbc3 !important;
+
+  font-size: 7px !important;
+
+  font-weight: 700 !important;
+
+  cursor: pointer !important;
+}
+
+
+.control-button:hover:not(:disabled) {
+  background: #102b36 !important;
+
+  border-color: #397185 !important;
+
+  color: #e2f0f4 !important;
+}
+
+
+.control-button:disabled {
+  opacity: 0.38 !important;
+
+  cursor: not-allowed !important;
+}
+
+
+.control-button.arm-button {
+  background: #0b3d2e !important;
+
+  border-color: #1c805e !important;
+
+  color: #75e0b5 !important;
+}
+
+
+/* =========================================================
+   WARNING
+   ========================================================= */
+
+.control-warning {
+  margin: 10px 12px 12px 12px !important;
+
+  padding: 10px !important;
+
+  box-sizing: border-box !important;
+
+  background: #151507 !important;
+
+  border: 1px solid #55471e !important;
+  border-radius: 5px !important;
+}
+
+
+.control-warning strong {
+  display: block !important;
+
+  color: #dfc95d !important;
+
+  font-size: 8px !important;
+
+  letter-spacing: 0.08em !important;
+}
+
+
+.control-warning p {
+  margin: 5px 0 0 0 !important;
+
+  color: #77785e !important;
+
+  font-size: 8px !important;
+
+  line-height: 1.5 !important;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1200px) {
+
+  .mission-control-grid {
+    grid-template-columns:
+      minmax(190px, 0.7fr)
+      minmax(360px, 1.5fr)
+      minmax(230px, 0.9fr) !important;
+  }
+
+}
+
+
+@media (max-width: 900px) {
+
+  .mission-control-topbar {
+    align-items: flex-start !important;
+
+    flex-direction: column !important;
+  }
+
+
+  .mission-control-status {
+    width: 100% !important;
+
+    flex-wrap: wrap !important;
+  }
+
+
+  .mission-control-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+
+  .mission-control-bar {
+    align-items: flex-start !important;
+
+    flex-direction: column !important;
+  }
+
+
+  .mission-progress {
+    width: 100% !important;
+  }
+
+}
